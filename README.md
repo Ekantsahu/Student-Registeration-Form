@@ -32,14 +32,11 @@ npm install
 $env:MONGODB_URI = "mongodb://localhost:27017/students"
 node server.js
 
-# Or use a MongoDB Atlas connection string (replace <your-uri>):
-$env:MONGODB_URI = "<your-mongodb-atlas-connection-string>"
-node server.js
 ```
 
 3. Open the form in your browser:
 
-- If the server serves the page, open `http://localhost:3000` (or the port shown in the server logs).
+- If the server serves the page, open `http://localhost:3019` (or the port shown in the server logs).
 - Or open `form.html` directly by double-clicking it or using your browser's Open File dialog.
 
 ## Repository files
@@ -53,12 +50,6 @@ node server.js
 
 - The app stores registrations in a MongoDB database named `students`.
 - You can inspect data using MongoDB Compass by connecting to your MongoDB instance and opening the `students` database.
-
-## Notes
-
-- If you want me to add a `start` script to `package.json` (for `npm start`) or add instructions for building/deploying, tell me and I can update the repo.
-
-- The server reads the `MONGODB_URI` environment variable to connect to MongoDB. If you want, I can add a `.env` example and `dotenv` support.
 
 
 Created for the Student Registration Form project.
