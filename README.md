@@ -60,10 +60,5 @@ node server.js
 
 - The server reads the `MONGODB_URI` environment variable to connect to MongoDB. If you want, I can add a `.env` example and `dotenv` support.
 
-## License & Contact
-
-Specify a license if you want one (e.g., MIT). For changes or questions, contact the repository owner.
-
----
 
 Created for the Student Registration Form project.
