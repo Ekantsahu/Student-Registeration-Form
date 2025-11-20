@@ -7,11 +7,14 @@ A simple student registration form built with HTML, CSS, and a small Node.js ser
 - Simple responsive registration form UI
 - Static CSS styling in `form.css`
 - Minimal Node.js server in `server.js` for local testing
+- Stores submitted registrations in a MongoDB database (database name: `students`).
 
 ## Prerequisites
 
 - Node.js (v12+ recommended)
 - npm (comes with Node.js)
+- MongoDB server (local) or MongoDB Atlas
+- MongoDB Compass (optional) — used to view the `students` database and its collections
 
 ## Quick start (Windows PowerShell)
 
@@ -24,6 +27,13 @@ npm install
 2. Start the server (if `server.js` is the server file):
 
 ```powershell
+# (Optional) set the MongoDB connection string, then start the server.
+# Example for a local MongoDB instance (database name `students`):
+$env:MONGODB_URI = "mongodb://localhost:27017/students"
+node server.js
+
+# Or use a MongoDB Atlas connection string (replace <your-uri>):
+$env:MONGODB_URI = "<your-mongodb-atlas-connection-string>"
 node server.js
 ```
 
@@ -39,9 +49,16 @@ node server.js
 - `server.js` — Minimal Node.js server to serve the form or accept submissions.
 - `package.json` — Project metadata and scripts.
 
+## Database
+
+- The app stores registrations in a MongoDB database named `students`.
+- You can inspect data using MongoDB Compass by connecting to your MongoDB instance and opening the `students` database.
+
 ## Notes
 
 - If you want me to add a `start` script to `package.json` (for `npm start`) or add instructions for building/deploying, tell me and I can update the repo.
+
+- The server reads the `MONGODB_URI` environment variable to connect to MongoDB. If you want, I can add a `.env` example and `dotenv` support.
 
 ## License & Contact
 
