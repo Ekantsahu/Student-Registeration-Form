@@ -43,10 +43,5 @@ node server.js
 
 - If you want me to add a `start` script to `package.json` (for `npm start`) or add instructions for building/deploying, tell me and I can update the repo.
 
-## License & Contact
-
-Specify a license if you want one (e.g., MIT). For changes or questions, contact the repository owner.
-
----
 
 Created for the Student Registration Form project.
